@@ -19,15 +19,14 @@ db.books.insertMany({
 
 
 db.books.find(
-{title {$ eq :  "Книга 3"} },
+{title {$eq :  "Книга 3"} },
 );
 
-db.books.find({}},
-);
+db.books.find({});
 
 
 
 db.books.updateOne(
-    {_id: {$lt: 1}},
+    {_id: {$eq: 1}},
     {$set: {description: description, authors: authors}}
 );
