@@ -18,12 +18,10 @@ db.books.insertMany({
 );
 
 
-//Должен вернуть книгу 3
 db.books.find(
 {title {$ eq :  "Книга 3"} },
 );
 
-//Должен вернуть все книги
 db.books.find({}},
 );
 
